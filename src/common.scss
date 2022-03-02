@@ -1,0 +1,45 @@
+body {
+  color: var(--textColor);
+  background-color: var(--bodyColor);
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  overflow-wrap: break-word;
+}
+
+.package-vp-icon {
+  filter: invert(1);
+}
+
+.package-badge {
+  background: transparent;
+}
+
+.package-tag.unidentified,
+.package-tag.unlisted {
+  background: var(--darkRed);
+  color: var(--textColor);
+}
+
+.-pub-tag-badge {
+  background: var(--darkBlue);
+}
+
+.mdc-checkbox
+  .mdc-checkbox__native-control:enabled:not(:checked):not(:indeterminate):not([data-indeterminate='true'])
+  ~ .mdc-checkbox__background {
+  border-color: var(--gray);
+}
+
+summary:hover,
+.sort-control .sort-control-popup .sort-control-option:hover,
+.packages .packages-item:hover,
+.publishers .publishers-item:hover,
+.search-form-container.experimental .search-form-linked-checkbox:hover,
+.home-block .mini-list-item:hover {
+  background: var(--pane01);
+}
+
+.pagination > li {
+  background: var(--pane01);
+}

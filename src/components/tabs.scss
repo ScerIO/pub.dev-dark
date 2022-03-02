@@ -1,0 +1,21 @@
+.detail-tabs-header {
+  background: var(--pane01);
+
+  & > .tab-button,
+  & > .tab-link > a {
+    color: var(--gray);
+
+    &:hover {
+      border-bottom-color: var(--gray);
+    }
+  }
+
+  & > .tab-button.-private,
+  & > .tab-link.-private > a {
+    color: var(--activeRed);
+
+    &:hover {
+      border-bottom-color: var(--activeRed);
+    }
+  }
+}

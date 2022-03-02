@@ -1,10 +1,9 @@
 # Custom dark theme for pub.dev
 
-<p align="center">
+<p align="left">
   <a href="#installation">Installation</a> •
-  <a href="#getting-started">Getting Started</a> •
-  <a href="#todo">Todo</a> •
-  <a href="#credits">Credits</a>
+  <a href="#showcase">Showcase</a> •
+  <a href="#development">Development</a> •
 </p>
 
 ## Installation
@@ -41,3 +40,10 @@
 ![Search](media/search.png)
 ![Package details](media/details.png)
 ![Package details markdown](media/details-markdown.png)
+
+## Development
+
+1. Install dependencies:
+`pub get`
+2. Run build
+`sh scripts/build.sh`

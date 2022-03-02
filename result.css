@@ -1,0 +1,199 @@
+@-moz-document domain(pub.dev) {
+  @media screen /*[[USE_DARK_THEME]]*/ {
+    :root {
+      --textColor: #dddddd;
+      --bodyColor: #121212;
+      --pane01: #1e1e1e;
+      --pane02: #232323;
+      --pane03: #252525;
+      --pane04: #272727;
+      --pane06: #2c2c2c;
+      --pane08: #2e2e2e;
+      --pane12: #333333;
+      --pane16: #363636;
+      --pane24: #383838;
+      --gray: #848484;
+      --darkBlue: #151920;
+      --darkRed: #391f1f;
+      --activeRed: #ae4b4b;
+    }
+
+    body {
+      color: var(--textColor);
+      background-color: var(--bodyColor);
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      overflow-wrap: break-word;
+    }
+
+    .package-vp-icon {
+      filter: invert(1);
+    }
+
+    .package-badge {
+      background: transparent;
+    }
+
+    .package-tag.unidentified,
+.package-tag.unlisted {
+      background: var(--darkRed);
+      color: var(--textColor);
+    }
+
+    .-pub-tag-badge {
+      background: var(--darkBlue);
+    }
+
+    .mdc-checkbox .mdc-checkbox__native-control:enabled:not(:checked):not(:indeterminate):not([data-indeterminate=true]) ~ .mdc-checkbox__background {
+      border-color: var(--gray);
+    }
+
+    summary:hover,
+.sort-control .sort-control-popup .sort-control-option:hover,
+.packages .packages-item:hover,
+.publishers .publishers-item:hover,
+.search-form-container.experimental .search-form-linked-checkbox:hover,
+.home-block .mini-list-item:hover {
+      background: var(--pane01);
+    }
+
+    .pagination > li {
+      background: var(--pane01);
+    }
+
+    .site-header {
+      background: var(--pane06);
+    }
+    .site-header .site-header-search .site-header-search-input {
+      background: transparent;
+    }
+
+    .-wide-header-detail-page .detail-tabs-wide-header,
+.-wide-header-detail-page .detail-header,
+._banner-bg {
+      background: var(--pane01);
+    }
+
+    .detail-tabs-header {
+      background: var(--pane01);
+    }
+    .detail-tabs-header > .tab-button, .detail-tabs-header > .tab-link > a {
+      color: var(--gray);
+    }
+    .detail-tabs-header > .tab-button:hover, .detail-tabs-header > .tab-link > a:hover {
+      border-bottom-color: var(--gray);
+    }
+    .detail-tabs-header > .tab-button.-private, .detail-tabs-header > .tab-link.-private > a {
+      color: var(--activeRed);
+    }
+    .detail-tabs-header > .tab-button.-private:hover, .detail-tabs-header > .tab-link.-private > a:hover {
+      border-bottom-color: var(--activeRed);
+    }
+
+    .landing-main {
+      background: transparent;
+    }
+
+    .home-block.home-block-ff, .home-block.home-block-pow {
+      background: transparent;
+    }
+    .home-block .mini-list-item {
+      background: var(--pane06);
+    }
+    .home-block .mini-list-item:hover .mini-list-item-body:before {
+      background: transparent;
+    }
+    .home-block .mini-list-item .mini-list-item-body:before {
+      background: transparent;
+    }
+
+    .search-bar > .input {
+      background: var(--pane16);
+    }
+
+    .search-form-container.experimental .search-form-linked-checkbox a {
+      color: var(--gray);
+    }
+    .search-form-container.experimental .search-form-linked-checkbox:hover {
+      background: var(--pane01);
+    }
+
+    .detail-info-box > .title:not(:first-child) {
+      border-top-color: var(--gray);
+    }
+
+    .markdown-body .highlight pre,
+.markdown-body pre {
+      padding: 16px;
+      overflow: auto;
+      font-size: 85%;
+      line-height: 1.45;
+      background-color: #132030;
+      border-radius: 3px;
+    }
+
+    .markdown-body img,
+.markdown-body table tr {
+      background: transparent;
+    }
+
+    .markdown-body pre code,
+.markdown-body pre tt {
+      color: aliceblue;
+      display: inline;
+      max-width: auto;
+      padding: 0;
+      margin: 0;
+      overflow: visible;
+      line-height: inherit;
+      word-wrap: normal;
+      background-color: transparent;
+      border: 0;
+    }
+
+    .markdown-body code,
+code {
+      background: var(--pane01);
+    }
+
+    .markdown-body hr {
+      background: var(--gray);
+    }
+
+    .markdown-body h1,
+.markdown-body h2 {
+      border-bottom-color: var(--gray);
+    }
+
+    .hljs-comment,
+.hljs-quote {
+      color: #9a9a5c;
+      font-style: italic;
+    }
+
+    .hljs-tag,
+.hljs-name,
+.hljs-attribute {
+      color: #2dfd33;
+      font-weight: normal;
+    }
+
+    .hljs-built_in,
+.hljs-builtin-name {
+      color: #dfe22e;
+    }
+
+    .hljs-string,
+.hljs-doctag {
+      color: #ff2f8f;
+    }
+
+    .hljs-keyword,
+.hljs-selector-tag,
+.hljs-subst {
+      color: #69ece6;
+      font-weight: bold;
+    }
+  }
+}

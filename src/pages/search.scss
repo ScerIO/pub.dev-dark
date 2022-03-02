@@ -1,0 +1,12 @@
+.search-bar > .input {
+  background: var(--pane16);
+}
+
+.search-form-container.experimental .search-form-linked-checkbox {
+  a {
+    color: var(--gray);
+  }
+  &:hover {
+    background: var(--pane01);
+  }
+}

@@ -1,0 +1,76 @@
+.detail-info-box > .title:not(:first-child) {
+  border-top-color: var(--gray);
+}
+
+.markdown-body .highlight pre,
+.markdown-body pre {
+  padding: 16px;
+  overflow: auto;
+  font-size: 85%;
+  line-height: 1.45;
+  background-color: #132030;
+  border-radius: 3px;
+}
+
+.markdown-body img,
+.markdown-body table tr {
+  background: transparent;
+}
+
+.markdown-body pre code,
+.markdown-body pre tt {
+  color: aliceblue;
+  display: inline;
+  max-width: auto;
+  padding: 0;
+  margin: 0;
+  overflow: visible;
+  line-height: inherit;
+  word-wrap: normal;
+  background-color: transparent;
+  border: 0;
+}
+
+.markdown-body code,
+code {
+  background: var(--pane01);
+}
+
+.markdown-body hr {
+  background: var(--gray);
+}
+
+.markdown-body h1,
+.markdown-body h2 {
+  border-bottom-color: var(--gray);
+}
+
+.hljs-comment,
+.hljs-quote {
+  color: #9a9a5c;
+  font-style: italic;
+}
+
+.hljs-tag,
+.hljs-name,
+.hljs-attribute {
+  color: #2dfd33;
+  font-weight: normal;
+}
+
+.hljs-built_in,
+.hljs-builtin-name {
+  color: #dfe22e;
+}
+
+.hljs-string,
+.hljs-doctag {
+  color: #ff2f8f;
+}
+
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-subst {
+  color: #69ece6;
+  font-weight: bold;
+}

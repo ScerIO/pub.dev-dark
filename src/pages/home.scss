@@ -1,0 +1,22 @@
+.landing-main {
+  background: transparent;
+}
+
+.home-block {
+  &.home-block-ff,
+  &.home-block-pow {
+    background: transparent;
+  }
+
+  .mini-list-item {
+    background: var(--pane06);
+
+    &:hover .mini-list-item-body:before {
+      background: transparent;
+    }
+
+    .mini-list-item-body:before {
+      background: transparent;
+    }
+  }
+}

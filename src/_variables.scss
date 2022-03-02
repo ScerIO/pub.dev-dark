@@ -1,0 +1,30 @@
+@use 'sass:color';
+
+$backgroundColor: #121212;
+$pane01Color: color.mix(#ffffff, $backgroundColor, 5%);
+$pane02Color: color.mix(#ffffff, $backgroundColor, 7%);
+$pane03Color: color.mix(#ffffff, $backgroundColor, 8%);
+$pane04Color: color.mix(#ffffff, $backgroundColor, 9%);
+$pane06Color: color.mix(#ffffff, $backgroundColor, 11%);
+$pane08Color: color.mix(#ffffff, $backgroundColor, 12%);
+$pane12Color: color.mix(#ffffff, $backgroundColor, 14%);
+$pane16Color: color.mix(#ffffff, $backgroundColor, 15%);
+$pane24Color: color.mix(#ffffff, $backgroundColor, 16%);
+
+:root {
+  --textColor: #dddddd;
+  --bodyColor: #{$backgroundColor};
+  --pane01: #{$pane01Color};
+  --pane02: #{$pane02Color};
+  --pane03: #{$pane03Color};
+  --pane04: #{$pane04Color};
+  --pane06: #{$pane06Color};
+  --pane08: #{$pane08Color};
+  --pane12: #{$pane12Color};
+  --pane16: #{$pane16Color};
+  --pane24: #{$pane24Color};
+  --gray: #848484;
+  --darkBlue: #151920;
+  --darkRed: #391f1f;
+  --activeRed: #ae4b4b;
+}

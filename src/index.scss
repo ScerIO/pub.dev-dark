@@ -1,0 +1,11 @@
+@-moz-document domain(pub.dev) {
+  @media screen /*! [[USE_DARK_THEME]] */ {
+    @import '_variables';
+    @import 'common';
+    @import 'components/header';
+    @import 'components/tabs';
+    @import 'pages/home';
+    @import 'pages/search';
+    @import 'pages/details';
+  }
+}

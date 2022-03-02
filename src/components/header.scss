@@ -1,0 +1,13 @@
+.site-header {
+  background: var(--pane06);
+
+  & #{&}-search #{&}-search-input {
+    background: transparent;
+  }
+}
+
+.-wide-header-detail-page .detail-tabs-wide-header,
+.-wide-header-detail-page .detail-header,
+._banner-bg {
+  background: var(--pane01);
+}

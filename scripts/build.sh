@@ -1,0 +1,1 @@
+dart scripts/sass_compile.dart src/index.scss result.css
