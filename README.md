@@ -3,7 +3,7 @@
 <p align="left">
   <a href="#installation">Installation</a> •
   <a href="#showcase">Showcase</a> •
-  <a href="#development">Development</a> •
+  <a href="#development">Development</a>
 </p>
 
 ## Installation
