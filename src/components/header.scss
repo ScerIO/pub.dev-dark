@@ -1,8 +1,9 @@
-.site-header {
+.site-header,
+header {
   background: var(--pane06);
 
-  & #{&}-search #{&}-search-input {
-    background: transparent;
+  .site-header-search .site-header-search-input {
+    background-color: var(--pane06);
   }
 }
 
@@ -10,4 +11,19 @@
 .-wide-header-detail-page .detail-header,
 ._banner-bg {
   background: var(--pane01);
+}
+
+header a,
+header p,
+header li {
+  color: var(--textColor);
+}
+
+.tt-input {
+  background-color: var(--pane01);
+  color: var(--textColor);
+}
+
+.self-crumb {
+  color: var(--gray);
 }

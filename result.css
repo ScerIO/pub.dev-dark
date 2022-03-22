@@ -27,11 +27,16 @@
       overflow-wrap: break-word;
     }
 
+    ::-webkit-scrollbar-thumb {
+      background-color: var(--pane12);
+    }
+
     .package-vp-icon {
       filter: invert(1);
     }
 
-    .package-badge {
+    .package-badge,
+.feature {
       background: transparent;
     }
 
@@ -62,17 +67,34 @@
       background: var(--pane01);
     }
 
-    .site-header {
+    .site-header,
+header {
       background: var(--pane06);
     }
-    .site-header .site-header-search .site-header-search-input {
-      background: transparent;
+    .site-header .site-header-search .site-header-search-input,
+header .site-header-search .site-header-search-input {
+      background-color: var(--pane06);
     }
 
     .-wide-header-detail-page .detail-tabs-wide-header,
 .-wide-header-detail-page .detail-header,
 ._banner-bg {
       background: var(--pane01);
+    }
+
+    header a,
+header p,
+header li {
+      color: var(--textColor);
+    }
+
+    .tt-input {
+      background-color: var(--pane01);
+      color: var(--textColor);
+    }
+
+    .self-crumb {
+      color: var(--gray);
     }
 
     .detail-tabs-header {
@@ -123,38 +145,9 @@
       border-top-color: var(--gray);
     }
 
-    .markdown-body .highlight pre,
-.markdown-body pre {
-      padding: 16px;
-      overflow: auto;
-      font-size: 85%;
-      line-height: 1.45;
-      background-color: #132030;
-      border-radius: 3px;
-    }
-
     .markdown-body img,
 .markdown-body table tr {
       background: transparent;
-    }
-
-    .markdown-body pre code,
-.markdown-body pre tt {
-      color: aliceblue;
-      display: inline;
-      max-width: auto;
-      padding: 0;
-      margin: 0;
-      overflow: visible;
-      line-height: inherit;
-      word-wrap: normal;
-      background-color: transparent;
-      border: 0;
-    }
-
-    .markdown-body code,
-code {
-      background: var(--pane01);
     }
 
     .markdown-body hr {
@@ -166,34 +159,137 @@ code {
       border-bottom-color: var(--gray);
     }
 
-    .hljs-comment,
-.hljs-quote {
+    pre {
+      border-color: var(--pane06);
+      background: transparent;
+    }
+
+    .source-code pre {
+      padding: 16px;
+    }
+
+    .source-code pre,
+.markdown-body .highlight pre,
+.markdown-body pre,
+.markdown-body code,
+code {
+      overflow: auto;
+      font-size: 85%;
+      line-height: 1.45;
+      background-color: #132030;
+      border-radius: 3px;
+    }
+    .source-code pre code,
+.source-code pre tt,
+.markdown-body .highlight pre code,
+.markdown-body .highlight pre tt,
+.markdown-body pre code,
+.markdown-body pre tt,
+.markdown-body code code,
+.markdown-body code tt,
+code code,
+code tt {
+      color: aliceblue;
+      display: inline;
+      max-width: auto;
+      padding: 0;
+      margin: 0;
+      overflow: visible;
+      line-height: inherit;
+      word-wrap: normal;
+      background-color: transparent;
+      border: 0;
+    }
+    .source-code pre .hljs-comment,
+.source-code pre .hljs-quote,
+.markdown-body .highlight pre .hljs-comment,
+.markdown-body .highlight pre .hljs-quote,
+.markdown-body pre .hljs-comment,
+.markdown-body pre .hljs-quote,
+.markdown-body code .hljs-comment,
+.markdown-body code .hljs-quote,
+code .hljs-comment,
+code .hljs-quote {
       color: #9a9a5c;
       font-style: italic;
     }
-
-    .hljs-tag,
-.hljs-name,
-.hljs-attribute {
+    .source-code pre .hljs-tag,
+.source-code pre .hljs-name,
+.source-code pre .hljs-attribute,
+.markdown-body .highlight pre .hljs-tag,
+.markdown-body .highlight pre .hljs-name,
+.markdown-body .highlight pre .hljs-attribute,
+.markdown-body pre .hljs-tag,
+.markdown-body pre .hljs-name,
+.markdown-body pre .hljs-attribute,
+.markdown-body code .hljs-tag,
+.markdown-body code .hljs-name,
+.markdown-body code .hljs-attribute,
+code .hljs-tag,
+code .hljs-name,
+code .hljs-attribute {
       color: #2dfd33;
       font-weight: normal;
     }
-
-    .hljs-built_in,
-.hljs-builtin-name {
+    .source-code pre .hljs-built_in,
+.source-code pre .hljs-builtin-name,
+.markdown-body .highlight pre .hljs-built_in,
+.markdown-body .highlight pre .hljs-builtin-name,
+.markdown-body pre .hljs-built_in,
+.markdown-body pre .hljs-builtin-name,
+.markdown-body code .hljs-built_in,
+.markdown-body code .hljs-builtin-name,
+code .hljs-built_in,
+code .hljs-builtin-name {
       color: #dfe22e;
     }
-
-    .hljs-string,
-.hljs-doctag {
+    .source-code pre .hljs-string,
+.source-code pre .hljs-doctag,
+.markdown-body .highlight pre .hljs-string,
+.markdown-body .highlight pre .hljs-doctag,
+.markdown-body pre .hljs-string,
+.markdown-body pre .hljs-doctag,
+.markdown-body code .hljs-string,
+.markdown-body code .hljs-doctag,
+code .hljs-string,
+code .hljs-doctag {
       color: #ff2f8f;
     }
-
-    .hljs-keyword,
-.hljs-selector-tag,
-.hljs-subst {
+    .source-code pre .hljs-keyword,
+.source-code pre .hljs-selector-tag,
+.source-code pre .hljs-subst,
+.markdown-body .highlight pre .hljs-keyword,
+.markdown-body .highlight pre .hljs-selector-tag,
+.markdown-body .highlight pre .hljs-subst,
+.markdown-body pre .hljs-keyword,
+.markdown-body pre .hljs-selector-tag,
+.markdown-body pre .hljs-subst,
+.markdown-body code .hljs-keyword,
+.markdown-body code .hljs-selector-tag,
+.markdown-body code .hljs-subst,
+code .hljs-keyword,
+code .hljs-selector-tag,
+code .hljs-subst {
       color: #69ece6;
       font-weight: bold;
+    }
+    .source-code pre .hljs-deletion,
+.markdown-body .highlight pre .hljs-deletion,
+.markdown-body pre .hljs-deletion,
+.markdown-body code .hljs-deletion,
+code .hljs-deletion {
+      background: #652929;
+    }
+    .source-code pre .hljs-addition,
+.markdown-body .highlight pre .hljs-addition,
+.markdown-body pre .hljs-addition,
+.markdown-body code .hljs-addition,
+code .hljs-addition {
+      background: #1d481d;
+    }
+
+    dd {
+      color: var(--gray);
     }
   }
 }

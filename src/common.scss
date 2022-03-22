@@ -7,11 +7,16 @@ body {
   overflow-wrap: break-word;
 }
 
+::-webkit-scrollbar-thumb {
+  background-color: var(--pane12);
+}
+
 .package-vp-icon {
   filter: invert(1);
 }
 
-.package-badge {
+.package-badge,
+.feature {
   background: transparent;
 }
 
